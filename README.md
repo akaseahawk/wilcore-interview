@@ -51,7 +51,7 @@ correctly surfaces the clarity premium hierarchy that raw median price obscures.
 "mispriced" label is most applicable to SI1/SI2 and VS1/VVS2 pairs, where average
 pricing is nearly indistinguishable despite the clarity grade difference.
 
-
+---
 
 **Section 1 - Ingestion**
 Reads the CSV and confirms the load.

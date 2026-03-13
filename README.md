@@ -84,6 +84,25 @@ Derives a `price_per_carat` feature (price / carat) to isolate the clarity premi
 
 **Section 9 - Summary**
 Single cell to summarize results and findings.
+
+| Step | Result |
+|------|--------|
+| Raw dataset | 53,940 rows x 3 columns (carat, clarity, price) |
+| After deduplication | 33,356 rows (20,584 duplicates removed - 38%) |
+| After IQR outlier removal (per clarity) | 30,784 rows (df_filtered) |
+| Carat <-> Price Pearson r | 0.891 (strong positive) |
+| Top 3 by median price | SI2 (\\$3,965) -> SI1 (\\$3,795) -> VS2 (\\$3,756) |
+| Top 3 by price-per-carat | VVS2 (\\$5,047/ct) -> VS1 (\\$4,630/ct) -> VS2 (\\$4,601/ct) |
+| Strongest mispricing pairs | SI1 ~ SI2 (mean price overlap); VS1 ~ VVS2 (mean price overlap) |
+| VVS1 anomaly | VVS1 price-per-carat (\\$3,724/ct) sits below SI1 (\\$4,043/ct) despite higher clarity grade |
+
+Carat weight is the dominant driver of price across all clarity grades. Price-per-carat
+correctly surfaces the clarity premium hierarchy that raw median price obscures. The
+"mispriced" label is most applicable to SI1/SI2 and VS1/VVS2 pairs, where average
+pricing is nearly indistinguishable despite the clarity grade difference.
+
+
+
 ---
 
 ## Assumptions

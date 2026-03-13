@@ -80,8 +80,6 @@ Mean price vs mean carat per clarity (support report):
 **Section 8 - Price-per-Carat Analysis**
 Derives a `price_per_carat` feature (price / carat) to isolate the clarity premium from size effects. Raw median price incorrectly ranks SI1/SI2 highest because those stones tend to be larger. Price-per-carat correctly surfaces VVS2, VS1, and VS2 at the top, reflecting the true clarity premium hierarchy. Also reveals that VVS1 trades at a lower price-per-carat than SI1 - a genuine mispricing anomaly in the data.
 
-![Price-per-Carat Box Plot by Clarity](charts/chart_08_price_per_carat_boxplot.png)
-
 ![Mean Price-per-Carat Bar Chart](charts/chart_09_price_per_carat_bar.png)
 
 **Section 9 - Summary**
